@@ -136,3 +136,14 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ===== BLOG CAROUSEL ===== */
+const blogCarousel = document.getElementById('blogCarousel');
+if (blogCarousel) {
+    const prevBtn = document.querySelector('.blog-carousel-prev');
+    const nextBtn = document.querySelector('.blog-carousel-next');
+    const cardWidth = () => blogCarousel.querySelector('.blog-article-card').offsetWidth + 20;
+
+    prevBtn.addEventListener('click', () => blogCarousel.scrollBy({ left: -cardWidth(), behavior: 'smooth' }));
+    nextBtn.addEventListener('click', () => blogCarousel.scrollBy({ left: cardWidth(), behavior: 'smooth' }));
+}
