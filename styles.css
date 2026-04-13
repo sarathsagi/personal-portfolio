@@ -808,6 +808,63 @@ a.cert-card:hover .cert-ext {
     line-height: 1.7;
 }
 
+.blog-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.blog-article-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: var(--shadow-sm);
+}
+
+.blog-article-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.blog-article-meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.blog-article-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.blog-article-link {
+    font-size: 0.8rem;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .blog-articles {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== CONTACT ===== */
 .contact-intro {
     text-align: center;
