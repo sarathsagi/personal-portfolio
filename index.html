@@ -1,158 +1,422 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarath Chandra Varma Sagi - Engineering Lead</title>
+    <title>Sarath Sagi — Lead Data Engineer</title>
+    <meta name="description" content="Sarath Sagi — Lead Data Engineer with 12+ years of experience designing analytics platforms and building real-time ETL pipelines.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#2563eb">
 </head>
 <body>
-    <div class="theme-switch">
-        <i class="fas fa-moon"></i>
-    </div>
 
-    <header>
-        <nav>
-            <ul>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header id="header">
+        <nav class="nav-container">
+            <div class="nav-logo">SS</div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog-posts">Blog Posts</a></li>
             </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
+
+        <!-- HERO -->
         <section id="hero">
-            <div class="container">
-                <img src="images/SarathSagi.jpg" alt="Sarath Sagi Profile Picture" class="profile-pic">
-                <h1>Sarath Chandra Varma Sagi</h1>
-                <p class="title">Engineering Lead | Enterprise Analytics</p>
-                <div class="social-links">
-                    <a href="https://github.com/sarathsagi" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sagisarath" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <div class="hero-content">
+                <img src="images/SarathSagi.jpg" alt="Sarath Sagi" class="profile-pic">
+                <h1>Sarath Sagi</h1>
+                <p class="hero-subtitle">
+                    <span id="typedText"></span><span class="cursor">|</span>
+                </p>
+                <p class="hero-tagline">12+ years building analytics platforms &amp; real-time data pipelines at scale</p>
+                <div class="hero-actions">
+                    <a href="https://www.linkedin.com/in/sagisarath" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/sarathsagi" target="_blank" class="btn btn-ghost">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://medium.com/@s.sarathvarma" target="_blank" class="btn btn-ghost">
+                        <i class="fab fa-medium"></i> Blog
+                    </a>
+                </div>
+            </div>
+            <div class="hero-scroll-hint">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section-alt">
+            <div class="container reveal">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">Data Engineering Lead with over 12 years of experience designing analytics platforms and building real-time ETL pipelines. Delivered scalable, modular data solutions at Vimeo, Grubhub, and Thomson Reuters, with expertise in Snowflake, dbt, PySpark, AWS, GCP, and Databricks. Strengthened data governance frameworks and mentored teams to successfully execute enterprise-scale projects — combining strong technical leadership with demonstrated business impact.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value"><span class="stat-number" data-target="12">0</span><span class="stat-plus">+</span></div>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value"><span class="stat-number" data-target="4">0</span></div>
+                        <p>Companies</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value"><span class="stat-number" data-target="3">0</span></div>
+                        <p>Certifications</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value"><span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span></div>
+                        <p>Technologies</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Results-driven data engineer with extensive experience and expertise in analysis, design, and development of largescale data engineering projects. Communicative and personable, able to collaborate with all members of an organization to achieve business goals, on-time. Demonstrated success adapting new technologies to transform raw data into profitable business solutions. Thrive in fast-paced environments while directing multiple projects and mastering new skills.</p>
-            </div>
-        </section>
-
+        <!-- SKILLS -->
         <section id="skills">
-            <div class="container">
-                <h2>Core Competencies</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fas fa-database"></i>
-                        <h3>Data Engineering</h3>
+            <div class="container reveal">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-categories">
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                        </div>
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Analytics Engineering</h3>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-bolt"></i> Distributed Processing</h3>
+                        <div class="tags">
+                            <span class="tag">PySpark</span>
+                            <span class="tag">Apache Spark</span>
+                            <span class="tag">Spark SQL</span>
+                            <span class="tag">Hadoop</span>
+                        </div>
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-cloud"></i>
-                        <h3>Cloud Platforms</h3>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Data Warehousing</h3>
+                        <div class="tags">
+                            <span class="tag">Snowflake</span>
+                            <span class="tag">BigQuery</span>
+                            <span class="tag">Databricks</span>
+                            <span class="tag">Redshift</span>
+                        </div>
                     </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-stream"></i> Data Streaming</h3>
+                        <div class="tags">
+                            <span class="tag">Apache Kafka</span>
+                            <span class="tag">AWS Kinesis</span>
+                            <span class="tag">GCP Pub/Sub</span>
+                            <span class="tag">Confluent Cloud</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+                        <div class="tags">
+                            <span class="tag">AWS (EMR, EC2, Lambda, S3)</span>
+                            <span class="tag">GCP (Dataflow, Pub/Sub, BigQuery)</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-sitemap"></i> Orchestration</h3>
+                        <div class="tags">
+                            <span class="tag">Astronomer Airflow</span>
+                            <span class="tag">Azkaban</span>
+                            <span class="tag">Oozie</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-exchange-alt"></i> Data Integration</h3>
+                        <div class="tags">
+                            <span class="tag">Stitch</span>
+                            <span class="tag">Fivetran</span>
+                            <span class="tag">Hightouch</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-bar"></i> Monitoring &amp; Observability</h3>
+                        <div class="tags">
+                            <span class="tag">Datadog</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Monte Carlo</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-infinity"></i> CI/CD &amp; DevOps</h3>
+                        <div class="tags">
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-project-diagram"></i> Data Transformation</h3>
+                        <div class="tags">
+                            <span class="tag">dbt</span>
+                            <span class="tag">Atlan</span>
+                            <span class="tag">Looker</span>
+                            <span class="tag">Tableau</span>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="skills-detail">
-                    <h3>Technical Expertise</h3>
-                    <ul class="tech-stack">
-                        <li><strong>Programming Languages:</strong> Python, Scala, Java</li>
-                        <li><strong>Big Data Technologies:</strong> PySpark, Apache Spark</li>
-                        <li><strong>Data Warehousing & Analytics:</strong> Snowflake, BigQuery, Redshift</li>
-                        <li><strong>Streaming & Messaging:</strong> Kafka, Kinesis, Pub/Sub, Confluent Cloud</li>
-                        <li><strong>Cloud Platforms:</strong> AWS (EMR, EC2, S3, Lambda, SNS, SQS), GCP (DataProc, Pub/Sub, Dataflow, Cloud SQL)</li>
-                        <li><strong>Workflow Orchestration:</strong> Apache Airflow, Azkaban, Oozie</li>
-                        <li><strong>Data Modeling:</strong> DBT, Star Schema, Snowflake Schema</li>
-                        <li><strong>Data Visualization:</strong> Looker, Tableau</li>
-                        <li><strong>Monitoring & Logging:</strong> Grafana, Prometheus, Datadog</li>
-                        <li><strong>CI/CD Pipelines:</strong> Jenkins, Git, GitHub Actions</li>
-                        <li><strong>Containerization & Orchestration:</strong> Docker, Kubernetes</li>
-                        <li><strong>Reverse ETL Tools:</strong> HighTouch, Fivetran</li>
-                    </ul>
-                </div> 
             </div>
         </section>
 
-        <section id="experience">
-            <div class="container">
-                <h2>Professional Experience</h2>
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section-alt">
+            <div class="container reveal">
+                <h2 class="section-title">Professional Experience</h2>
                 <div class="timeline">
+
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Engineering Lead</h3>
-                            <p class="company">Vimeo</p>
-                            <p class="date">11/2021 - Present | New York</p>
-                            <p>Technical leader on strategy and execution within the Data organization, building analytics pipelines and enterprise data models, and mentoring junior team members. Specialized in Snowflake, DBT, and Looker.</p>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-title">
+                                    <h3>Lead Data Engineer</h3>
+                                    <p class="company"><i class="fas fa-building"></i> Vimeo</p>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> Nov 2021 – Present</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> New York</span>
+                                </div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Architected a modular analytics platform for Sales, Marketing, and Operations, delivering real-time insights and enabling self-serve data access.</li>
+                                <li>Built dbt models using surrogate and diff-key logic, increasing model traceability and reducing churn.</li>
+                                <li>Unified ETL pipelines into a PySpark and Airflow framework, significantly boosting reliability and maintainability.</li>
+                                <li>Established comprehensive data governance standards, including semantic modeling and lineage, to enhance data trust and consistency.</li>
+                                <li>Mentored engineers via code reviews, onboarding documentation, and best practices in modular design.</li>
+                                <li>Partnered with cross-functional teams to define KPIs and deliver actionable data products.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Snowflake</span><span>dbt</span><span>GCP</span><span>Databricks</span><span>PySpark</span><span>Kafka</span><span>Airflow</span><span>Looker</span><span>Monte Carlo</span><span>Atlan</span><span>Hightouch</span>
+                            </div>
                         </div>
                     </div>
+
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Senior Data Engineer</h3>
-                            <p class="company">Grubhub</p>
-                            <p class="date">07/2017 - 11/2021 | New York</p>
-                            <p>Designed and built high-performance production platforms and streaming pipelines for real-time analytics. Focused on AWS, Spark Streaming, and Kafka.</p>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-title">
+                                    <h3>Senior Data Engineer</h3>
+                                    <p class="company"><i class="fas fa-building"></i> Grubhub</p>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> Jul 2017 – Nov 2021</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> New York</span>
+                                </div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Built real-time streaming pipelines with Kafka and Spark Streaming for fraud detection and analytics, enhancing data timeliness and accuracy.</li>
+                                <li>Developed batch ETL workflows for segmentation, restaurant performance, and logistics analytics.</li>
+                                <li>Migrated legacy ETL jobs to Airflow, implementing modular DAGs and robust dependency management.</li>
+                                <li>Created reusable PySpark frameworks for data cleansing and enrichment, improving processing efficiency.</li>
+                                <li>Collaborated with data science teams to enable experimentation and model deployment at scale.</li>
+                                <li>Optimized Redshift and Hive queries, improving dashboard responsiveness and user experience.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>AWS</span><span>PySpark</span><span>Spark Streaming</span><span>Kafka</span><span>Hive</span><span>Redshift</span><span>Airflow</span><span>Datadog</span><span>Jenkins</span>
+                            </div>
                         </div>
                     </div>
+
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Data Engineer</h3>
-                            <p class="company">Thomson Reuters</p>
-                            <p class="date">06/2015 - 07/2017 | Boston</p>
-                            <p>Developed scalable distributed data solutions using Apache Spark and Hive, focusing on near-real-time ingestion and data modeling.</p>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-title">
+                                    <h3>Software Development Engineer</h3>
+                                    <p class="company"><i class="fas fa-building"></i> Thomson Reuters</p>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> Jun 2015 – Jul 2017</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Boston</span>
+                                </div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Engineered Spark-based pipelines on AWS EMR for legal and financial analytics, enabling scalable processing.</li>
+                                <li>Designed Hive data models and partitioning strategies for efficient querying and reporting.</li>
+                                <li>Built secure cloud infrastructure with IAM, CloudTrail, and S3 encryption to ensure compliance.</li>
+                                <li>Developed Kafka ingestion workflows for real-time data capture and integration.</li>
+                                <li>Implemented CI/CD pipelines for Spark jobs, automating deployment and reducing manual errors.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>AWS EMR</span><span>Apache Spark</span><span>Kafka</span><span>Hive</span><span>HDFS</span><span>Oozie</span><span>S3</span><span>Lambda</span>
+                            </div>
                         </div>
                     </div>
+
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Software Development Engineer</h3>
-                            <p class="company">GSS InfoTech</p>
-                            <p class="date">10/2012 - 01/2014 | Hyderabad, India</p>
-                            <p>Analyzed Hadoop clusters and implemented Hive data transformations to meet business requirements.</p>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-title">
+                                    <h3>Software Engineer</h3>
+                                    <p class="company"><i class="fas fa-building"></i> GSS InfoTech</p>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> Oct 2012 – Jan 2014</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Hyderabad, India</span>
+                                </div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Developed Hive and Pig scripts for telecom data transformation and reporting, improving data accuracy.</li>
+                                <li>Engineered Sqoop workflows between Oracle and HDFS to enable reliable data exchange.</li>
+                                <li>Automated nightly processing using Oozie, integrating Hive and Pig actions for seamless orchestration.</li>
+                                <li>Tuned Hive queries and MapReduce jobs, enhancing performance on a 40-node Hadoop cluster.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Hadoop</span><span>Hive</span><span>PIG</span><span>Sqoop</span><span>Oozie</span><span>HDFS</span><span>MapReduce</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <div class="container reveal">
+                <h2 class="section-title">Education</h2>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <h3>Master of Science — Computational Science</h3>
+                            <p class="edu-school">Texas A&amp;M University</p>
+                            <p class="edu-meta">2014 – 2015 &nbsp;·&nbsp; GPA: 3.85 / 4.0</p>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-university"></i></div>
+                        <div>
+                            <h3>Bachelor of Technology — Computer Science</h3>
+                            <p class="edu-school">Jawaharlal Nehru Technological University</p>
+                            <p class="edu-meta">2006 – 2010 &nbsp;·&nbsp; Hyderabad, India</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contact</h2>
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" class="section-alt">
+            <div class="container reveal">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-grid">
+                    <a class="cert-card" href="https://credentials.databricks.com/e941da01-4510-4d8d-bc06-98332d4fb9a0#acc.vOWISfNg" target="_blank">
+                        <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-info">
+                            <h3>Databricks Certified Data Engineer Associate</h3>
+                            <p class="cert-issuer">Databricks</p>
+                            <p class="cert-year">2025</p>
+                        </div>
+                        <i class="fas fa-external-link-alt cert-ext"></i>
+                    </a>
+                    <a class="cert-card" href="https://www.credly.com/badges/a7ea9e39-f5a9-4fff-869e-eb7516c9ed46/linked_in_profile" target="_blank">
+                        <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-info">
+                            <h3>Professional Data Engineer</h3>
+                            <p class="cert-issuer">Google Cloud</p>
+                            <p class="cert-year">2025</p>
+                        </div>
+                        <i class="fas fa-external-link-alt cert-ext"></i>
+                    </a>
+                    <div class="cert-card">
+                        <div class="cert-badge"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-info">
+                            <h3>AWS Certified Developer — Associate</h3>
+                            <p class="cert-issuer">Amazon Web Services</p>
+                            <p class="cert-year">2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG -->
+        <section id="blog">
+            <div class="container reveal">
+                <h2 class="section-title">Blog</h2>
+                <div class="blog-cta">
+                    <i class="fab fa-medium blog-icon"></i>
+                    <div class="blog-text">
+                        <p>I write about data engineering, analytics architecture, and modern data stack practices on Medium.</p>
+                        <a href="https://medium.com/@s.sarathvarma" target="_blank" class="btn btn-primary">
+                            Read My Articles <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section-alt">
+            <div class="container reveal">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-intro">Open to interesting data engineering opportunities and conversations.</p>
                 <div class="contact-grid">
-                    <div class="contact-item">
+                    <a class="contact-card" href="mailto:s.sarathvarma@gmail.com">
                         <i class="fas fa-envelope"></i>
-                        <p><a href="mailto:s.sarathvarma@gmail.com">s.sarathvarma@gmail.com</a></p>
-                    </div>
-                    <div class="contact-item">
+                        <span>s.sarathvarma@gmail.com</span>
+                    </a>
+                    <a class="contact-card" href="https://www.linkedin.com/in/sagisarath" target="_blank">
                         <i class="fab fa-linkedin"></i>
-                        <p><a href="https://www.linkedin.com/in/sagisarath" target="_blank">LinkedIn Profile</a></p>
-                    </div>
+                        <span>linkedin.com/in/sagisarath</span>
+                    </a>
+                    <a class="contact-card" href="https://github.com/sarathsagi" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/sarathsagi</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="blog-posts">
-            <div class="container">
-                <h2>Blog Posts</h2>
-                <p>Check out my articles on Medium for insights and discussions on data engineering and analytics engineering:
-                <a href="https://medium.com/@s.sarathvarma" target="_blank">Visit my Medium Profile</a></p>
-            </div>
-        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Sarath Chandra Varma Sagi. All rights reserved.</p>
+            <p>© 2025 Sarath Sagi &nbsp;·&nbsp; New York</p>
         </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
