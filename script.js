@@ -75,9 +75,9 @@ window.addEventListener('scroll', () => {
 
 /* ===== TYPEWRITER ===== */
 const roles = [
-    'Lead Data Engineer',
+    'Staff Data Engineer',
+    'Trust & Safety Data Engineer',
     'Analytics Platform Architect',
-    'Data Governance Expert',
     'Real-time Pipeline Builder'
 ];
 
